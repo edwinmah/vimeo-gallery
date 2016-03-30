@@ -1,0 +1,96 @@
+/*****************/
+/*! Base Styles  */
+/*****************/
+img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+/*******************/
+/*! Content Blocks */
+/*******************/
+.site-header__container {
+  padding: 0 1.5em;
+}
+
+/************/
+/*! Layout  */
+/************/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  margin: 2em auto;
+  max-width: 71.25em;
+}
+
+.container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Video Grid */
+.portfolio-item {
+  margin-bottom: 1.5em;
+  padding: 0 1.5em;
+}
+
+@media (min-width: 30em) {
+  .portfolio-item {
+    float: left;
+    width: 50%;
+  }
+
+  .portfolio-item:nth-child(odd) {
+    clear: left;
+  }
+}
+@media (min-width: 40em) {
+  .portfolio-item {
+    width: 33.3333333333%;
+  }
+
+  .portfolio-item:nth-child(odd) {
+    clear: none;
+  }
+
+  .portfolio-item:nth-child(3n+4) {
+    clear: left;
+  }
+}
+/********************************************/
+/*! Magnific Popup, Simple fade transition  */
+/********************************************/
+.mfp-fade.mfp-bg,
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.95;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+.mfp-fade.mfp-bg.mfp-removing,
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+.mfp-title {
+  position: absolute;
+  margin-top: 1em;
+  color: #ffffff;
+  font-weight: bold;
+}
