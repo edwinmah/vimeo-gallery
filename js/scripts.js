@@ -33,7 +33,7 @@ $.getJSON('https://vimeo.com/api/v2/' + feed + '/videos.json', function(data) {
 $(document).ready(function() {
 
   // bind click event to #portfolio element
-  $('#portfolio').on('click', '.video-popup', function(e) {
+  $('#videos').on('click', '.video-popup', function(e) {
 
     // don't need to go to Vimeo site, so stop default click behavior
     e.preventDefault();
