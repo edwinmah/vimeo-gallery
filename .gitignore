@@ -2,8 +2,5 @@ config.codekit
 .sass-cache
 _float.scss
 _flexbox.scss
-<<<<<<< HEAD
 style.scss
-=======
->>>>>>> master
 /config.codekit3
