@@ -14,6 +14,8 @@ $.getJSON('https://vimeo.com/api/v2/' + feed + '/videos.json', function(data) {
     var title     = data[i].title;
     var thumbnail = data[i].thumbnail_large;
     var videoUrl  = data[i].url;
+    var author    = data[i].user_name;
+    var authorUrl = data[i].user_url;
 
     // create markup and append to output variable
     output += '<article class="video">';
@@ -21,6 +23,9 @@ $.getJSON('https://vimeo.com/api/v2/' + feed + '/videos.json', function(data) {
     output +=     '<img src="' + thumbnail + '" alt="' + title + '">';
     output +=     '<h3 class="video-title">' + title + '</h3>';
     output +=   '</a>';
+    output +=   '<p class="video-author">By ';
+    output +=     '<a href="' + authorUrl + '">' + author + '</a>';
+    output +=   '</p>';
     output += '</article>';
   } // end portfolio loop
 
