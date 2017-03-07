@@ -57,7 +57,7 @@ $(document).ready(function() {
       },
       callbacks: {
         markupParse: function(template, values, item) {
-         values.title = item.el.attr('title');
+          values.title = item.el.attr('title');
         }
       }
     }).magnificPopup('open');
