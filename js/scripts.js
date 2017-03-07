@@ -24,7 +24,7 @@ $.getJSON('https://vimeo.com/api/v2/' + feed + '/videos.json', function (data) {
     output += '</article>';
   } // end portfolio loop
 
-  $('#portfolio').html(output); // inject content and markup into DOM
+  $('#videos').html(output); // inject content and markup into DOM
 });
 
 //=================
@@ -58,3 +58,7 @@ $(document).ready(function() {
     }).magnificPopup('open');
   });
 });
+
+
+
+
