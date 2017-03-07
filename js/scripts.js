@@ -43,17 +43,19 @@ $(document).ready(function() {
     // don't need to go to Vimeo site, so stop default click behavior
     e.preventDefault();
 
+    var output  = '<div class="mfp-iframe-scaler">';
+        output +=   '<div class="mfp-close"></div>';
+        output +=   '<iframe class="mfp-iframe" allowfullscreen></iframe>';
+        output +=   '<div class="mfp-title">Some caption</div>';
+        output += '</div>';
+
     $(this).magnificPopup({
       type: 'iframe',
       mainClass: 'mfp-fade',
       removalDelay: 160,
       preloader: false,
       iframe: {
-        markup: '<div class="mfp-iframe-scaler">'+
-                  '<div class="mfp-close"></div>'+
-                  '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-                  '<div class="mfp-title">Some caption</div>'+
-                '</div>'
+        markup: output
       },
       callbacks: {
         markupParse: function(template, values, item) {
@@ -63,5 +65,13 @@ $(document).ready(function() {
     }).magnificPopup('open');
   });
 });
+
+
+
+
+
+
+
+
 
 

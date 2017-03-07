@@ -98,3 +98,7 @@ html {
   color: #ffffff;
   font-weight: bold;
 }
+
+.mfp-iframe {
+  border: 0;
+}
