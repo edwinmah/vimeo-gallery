@@ -30,41 +30,30 @@ html {
   max-width: 71.25em;
 }
 
-.container::after {
-  clear: both;
-  content: "";
-  display: table;
+/* Video Grid */
+#videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-/* Video Grid */
-.portfolio-item {
+.video {
   margin-bottom: 1.5em;
   padding: 0 1.5em;
 }
 
 @media (min-width: 30em) {
-  .portfolio-item {
-    float: left;
+  .video {
     width: 50%;
   }
+}
 
-  .portfolio-item:nth-child(odd) {
-    clear: left;
+@media (min-width: 48em) {
+  .video {
+    width: 33.3333%;
   }
 }
-@media (min-width: 40em) {
-  .portfolio-item {
-    width: 33.3333333333%;
-  }
 
-  .portfolio-item:nth-child(odd) {
-    clear: none;
-  }
-
-  .portfolio-item:nth-child(3n+4) {
-    clear: left;
-  }
-}
 /********************************************/
 /*! Magnific Popup, Simple fade transition  */
 /********************************************/
