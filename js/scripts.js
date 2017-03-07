@@ -11,9 +11,9 @@ $.getJSON('https://vimeo.com/api/v2/' + feed + '/videos.json', function(data) {
   for (var i = 0; i < count ; i++) {
 
     // gather values from JSON feed and assign to variables
-    var title = data[i].title;
+    var title     = data[i].title;
     var thumbnail = data[i].thumbnail_large;
-    var url = data[i].url;
+    var videoUrl  = data[i].url;
 
     // create markup and append to output variable
     output += '<article class="video">';
