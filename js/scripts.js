@@ -17,7 +17,7 @@ $.getJSON('https://vimeo.com/api/v2/' + feed + '/videos.json', function(data) {
 
     // create markup and append to output variable
     output += '<article class="video">';
-    output +=   '<a href="' + url + '" class="video-popup" title="' + title + '">';
+    output +=   '<a href="' + videoUrl + '" class="video-popup" title="' + title + '">';
     output +=     '<img src="' + thumbnail + '" alt="' + title + '">';
     output +=     '<h3 class="video-title">' + title + '</h3>';
     output +=   '</a>';
