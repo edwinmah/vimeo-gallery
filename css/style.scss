@@ -58,6 +58,12 @@ html {
   }
 }
 
+@media (min-width: 80em) {
+  .video {
+    width: 25%;
+  }
+}
+
 /********************************************/
 /*! Magnific Popup, Simple fade transition  */
 /********************************************/
