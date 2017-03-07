@@ -4,11 +4,11 @@
 var feed = 'channel/staffpicks';
 
 $.getJSON('https://vimeo.com/api/v2/' + feed + '/videos.json', function(data) {
-  var videocount = 9; // number of videos to get
-  var output = '';    // create an empty output variable
+  var count  = 12;  // number of videos to get
+  var output = ''; // create an empty output variable
 
   // loop through objects
-  for (var i = 0; i < videocount ; i++) {
+  for (var i = 0; i < count ; i++) {
 
     // gather values from JSON feed and assign to variables
     var title = data[i].title;
