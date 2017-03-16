@@ -27,7 +27,7 @@ $.getJSON('https://vimeo.com/api/v2/' + feed + '/videos.json', function(data) {
     output +=     '<a href="' + authorUrl + '">' + author + '</a>';
     output +=   '</p>';
     output += '</article>';
-  } // end portfolio loop
+  } // end videos loop
 
   $('#videos').html(output); // inject content and markup into DOM
 });
@@ -37,7 +37,7 @@ $.getJSON('https://vimeo.com/api/v2/' + feed + '/videos.json', function(data) {
 //=================
 $(document).ready(function() {
 
-  // bind click event to #portfolio element
+  // bind click event to #videos element
   $('#videos').on('click', '.video-popup', function(e) {
 
     // don't need to go to Vimeo site, so stop default click behavior
