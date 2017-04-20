@@ -4,7 +4,8 @@
 var feed = 'channel/staffpicks';
 
 $.getJSON('https://vimeo.com/api/v2/' + feed + '/videos.json', function(data) {
-  var count  = 12;  // number of videos to get
+  var limit  = 12;  // maximum number of videos to get
+  var count  = (data.length < limit) ? data.length : limit;  // number of videos to get
   var output = ''; // create an empty output variable
 
   // loop through objects
