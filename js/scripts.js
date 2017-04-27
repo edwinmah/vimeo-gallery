@@ -66,13 +66,3 @@ $(document).ready(function() {
     }).magnificPopup('open');
   });
 });
-
-
-
-
-
-
-
-
-
-
